@@ -143,6 +143,9 @@ internal fun SettingsScreen(onBack: () -> Unit) {
                         fontSize = 12.sp,
                         textAlign = TextAlign.Center
                     )
+                    TextButton(onClick = { openUrl(context, SOURCE_CODE_URL) }) {
+                        Text(stringResource(R.string.settings_license), fontSize = 12.sp, textAlign = TextAlign.Center)
+                    }
                 }
             }
         }
@@ -355,6 +358,15 @@ private fun FeedbackSection(versionName: String) {
 }
 
 private const val FEEDBACK_EMAIL = "info@om21.at"
+private const val SOURCE_CODE_URL = "https://github.com/mobermair/Fowi---Easy-SMS-Forwarder"
+
+private fun openUrl(context: Context, url: String) {
+    try {
+        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+    } catch (e: ActivityNotFoundException) {
+        Toast.makeText(context, url, Toast.LENGTH_LONG).show()
+    }
+}
 
 // Opens the user's mail app with a prefilled draft; nothing is sent without the user's action.
 private fun sendFeedback(context: Context, versionName: String) {

@@ -51,3 +51,11 @@ Keep the keystore and this file backed up outside the project. Android only inst
 Incoming messages that end with `This is a forwarded message` are never forwarded again, which prevents SMS loops when a recipient points back to a device running this app.
 
 Google Play restricts SMS permissions to eligible app use cases and may require this app to be the default SMS handler. Review current Play policies before distributing through Google Play; sideloaded builds still require the user to grant Android's SMS permissions.
+
+## License
+
+Copyright (C) 2026 Mike Obermair
+
+Fowi is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Fowi is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [LICENSE](LICENSE) file for details.
