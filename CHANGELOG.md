@@ -14,4 +14,5 @@ First public release.
 - Daily SMS limit (100 by default) to guard against unexpected costs.
 - History with send and delivery status, filtering, undo and resend.
 - Notifications when a forward fails, is not delivered or has no delivery report after 24 hours.
-- English and German, light and dark theme.
+- English and German, light and dark theme in the colors of the logo.
+- Open source under the GNU General Public License v3.0.
