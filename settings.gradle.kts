@@ -17,5 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SMS-Forwarder"
+rootProject.name = "Fowi"
 include(":app")

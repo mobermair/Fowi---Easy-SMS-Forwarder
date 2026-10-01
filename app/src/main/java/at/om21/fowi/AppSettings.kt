@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate

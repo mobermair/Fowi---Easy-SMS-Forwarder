@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.content.Context
 import android.os.Build
@@ -25,7 +25,7 @@ object SmsSender {
 
     /**
      * True for messages this app (or another device running it) forwarded. Such messages are
-     * never forwarded again, otherwise a recipient pointing back to a relay causes an SMS loop.
+     * never forwarded again, otherwise a recipient pointing back to a forwarding phone causes an SMS loop.
      */
     fun isForwarded(body: String): Boolean = body.trimEnd().endsWith(FORWARD_NOTE)
 

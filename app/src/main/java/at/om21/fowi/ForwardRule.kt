@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import java.time.DayOfWeek
 import java.time.LocalDateTime

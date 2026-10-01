@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

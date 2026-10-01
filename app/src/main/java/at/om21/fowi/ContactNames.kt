@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.Manifest
 import android.content.Context

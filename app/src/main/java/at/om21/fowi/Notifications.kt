@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.annotation.SuppressLint
 import android.app.NotificationChannel

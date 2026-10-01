@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

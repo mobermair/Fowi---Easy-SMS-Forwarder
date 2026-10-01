@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.graphics.Color
 import android.os.Bundle
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge(statusBarStyle = transparentBars, navigationBarStyle = transparentBars)
         val openHistory = intent.getBooleanExtra(EXTRA_OPEN_HISTORY, false)
         setContent {
-            RelayTheme {
-                RelayApp(initialTab = if (openHistory) Tab.History else Tab.Home)
+            FowiTheme {
+                FowiApp(initialTab = if (openHistory) Tab.History else Tab.Home)
             }
         }
     }
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-private fun RelayApp(initialTab: Tab) {
+private fun FowiApp(initialTab: Tab) {
     val context = LocalContext.current
     var selectedTab by rememberSaveable { mutableStateOf(initialTab) }
     var historyFilter by rememberSaveable { mutableStateOf(HistoryFilter.All) }

@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -61,8 +61,8 @@ class SmsStatusReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        private const val ACTION_SENT = "com.smsforwarder.SMS_SENT"
-        private const val ACTION_DELIVERED = "com.smsforwarder.SMS_DELIVERED"
+        private const val ACTION_SENT = "at.om21.fowi.SMS_SENT"
+        private const val ACTION_DELIVERED = "at.om21.fowi.SMS_DELIVERED"
         private const val EXTRA_ENTRY_ID = "entryId"
         private const val EXTRA_RECIPIENT_INDEX = "recipientIndex"
         private const val EXTRA_ATTEMPT = "attempt"
@@ -87,7 +87,7 @@ class SmsStatusReceiver : BroadcastReceiver() {
             // data URI makes each message, recipient, attempt and part distinct.
             val intent = Intent(context, SmsStatusReceiver::class.java)
                 .setAction(action)
-                .setData(Uri.parse("relay-status://$entryId/$recipientIndex/$attempt/$part"))
+                .setData(Uri.parse("fowi-status://$entryId/$recipientIndex/$attempt/$part"))
                 .putExtra(EXTRA_ENTRY_ID, entryId)
                 .putExtra(EXTRA_RECIPIENT_INDEX, recipientIndex)
                 .putExtra(EXTRA_ATTEMPT, attempt)

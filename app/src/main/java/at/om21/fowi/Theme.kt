@@ -1,4 +1,4 @@
-package com.smsforwarder
+package at.om21.fowi
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -87,7 +87,7 @@ private val DarkColors = darkColorScheme(
 // The light/dark choice from the settings is applied through AppCompat's night mode,
 // which is reflected in the configuration that isSystemInDarkTheme() reads.
 @Composable
-internal fun RelayTheme(content: @Composable () -> Unit) {
+internal fun FowiTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = if (isSystemInDarkTheme()) DarkColors else LightColors,
         content = content

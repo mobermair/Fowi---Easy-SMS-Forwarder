@@ -14,11 +14,11 @@ val keystoreProperties = Properties().apply {
 }
 
 android {
-    namespace = "com.smsforwarder"
+    namespace = "at.om21.fowi"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.smsforwarder"
+        applicationId = "at.om21.fowi"
         minSdk = 26
         targetSdk = 35
         // Raise versionCode by one for every release; versionName follows semantic versioning.
