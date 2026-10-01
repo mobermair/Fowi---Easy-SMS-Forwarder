@@ -1,0 +1,17 @@
+# Gradle and build output
+.gradle/
+.kotlin/
+build/
+
+# Machine-specific configuration
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Release signing: the keystore and its passwords must never be committed
+keystore.properties
+*.jks
+*.keystore

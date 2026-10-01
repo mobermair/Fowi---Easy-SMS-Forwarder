@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Fowi – Easy SMS-Forwarder</string>
+    <string name="app_launcher_name" translatable="false">Fowi</string>
+    <string name="app_eyebrow">FOWI  /  EASY SMS-FORWARDER</string>
+
+    <!-- Navigation and common actions -->
+    <string name="tab_home">Home</string>
+    <string name="tab_rules">Rules</string>
+    <string name="tab_history">History</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_exempt">Exempt</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="setup_contacts_title">Contact names</string>
+    <string name="setup_contacts_done">Rules and history show contact names.</string>
+    <string name="setup_contacts_todo">Show contact names instead of plain numbers in rules and history.</string>
+    <string name="rule_delete_title">Delete rule?</string>
+    <string name="rule_delete_text">The rule and its recipients are removed. Matching messages are no longer forwarded.</string>
+    <string name="history_sender_number">From %1$s</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_expand">Show details</string>
+    <string name="action_collapse">Hide details</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme_system">System default</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System default</string>
+    <string name="settings_forwarding">Forwarding</string>
+    <string name="settings_include_sender">Include sender</string>
+    <string name="settings_include_sender_text">Starts the forward with \"From:\" and the original sender\'s number, plus the contact name if known. Makes the SMS slightly longer.</string>
+    <string name="settings_daily_limit">Daily limit</string>
+    <string name="daily_limit_summary">Up to %1$d SMS per day  ·  %2$d sent today</string>
+    <string name="daily_limit_summary_off">No limit  ·  %1$d SMS sent today</string>
+    <string name="daily_limit_link">Daily limit: %1$s</string>
+    <string name="daily_limit_dialog_text">Once the limit is reached, further forwards are not sent that day and you get a notification. Long messages count as several SMS, resends count too. The count restarts at midnight.</string>
+    <string name="daily_limit_dialog_label">SMS per day</string>
+    <string name="daily_limit_dialog_hint">0 = no limit</string>
+    <string name="action_save">Save</string>
+    <string name="action_close">Close</string>
+
+    <!-- Home -->
+    <string name="home_last_forward">Last forward  ·  %1$s</string>
+    <string name="home_no_forward_yet">No messages forwarded yet</string>
+    <string name="forwarding_on">Fowi is active</string>
+    <string name="forwarding_paused">Fowi is paused</string>
+    <string name="forwarding_active_hint">Matching messages are forwarded automatically.</string>
+    <string name="forwarding_setup_hint">Waiting for setup. Complete the required steps below.</string>
+    <string name="forwarding_paused_hint">Incoming messages are not checked or forwarded.</string>
+    <string name="forwarding_switch_description">Forward incoming messages</string>
+    <string name="stat_forwarded">Forwarded</string>
+    <string name="stat_active_rules">Active rules</string>
+    <string name="stat_failed">Failed</string>
+    <string name="setup_title">Setup</string>
+    <string name="setup_progress">%1$d of %2$d done</string>
+    <string name="setup_done">Done</string>
+    <string name="setup_optional_title">%1$s  ·  optional</string>
+    <string name="setup_sms_title">SMS access</string>
+    <string name="setup_sms_done">Incoming messages can be checked and forwarded.</string>
+    <string name="setup_sms_todo">Required to receive messages and send forwards.</string>
+    <string name="setup_battery_title">Battery optimization</string>
+    <string name="setup_battery_done">The app is not restricted in the background.</string>
+    <string name="setup_battery_todo">Some phones delay or block background apps. Recommended.</string>
+    <string name="setup_notifications_title">Notifications</string>
+    <string name="setup_notifications_done">You are alerted when a forward fails.</string>
+    <string name="setup_notifications_todo">Get an alert when a message cannot be forwarded. Recommended.</string>
+    <string name="setup_rule_title">Active rule</string>
+    <string name="setup_rule_done">%1$d of %2$d rules active.</string>
+    <string name="setup_rule_todo">Create or enable at least one forwarding rule.</string>
+
+    <!-- Rules -->
+    <string name="rules_title">Rules</string>
+    <string name="rules_subtitle">%1$d active  ·  %2$d total</string>
+    <string name="rules_section">Your rules</string>
+    <string name="rules_add">Add rule</string>
+    <string name="rules_empty_title">No rules yet</string>
+    <string name="rules_empty_text">Add a sender or message-text filter to get started.</string>
+    <string name="rules_privacy_note">Messages are processed on this device. The app does not upload messages or rules.</string>
+    <string name="cost_notice_title">Carrier charges may apply</string>
+    <string name="cost_notice_text">Every forward is sent as a regular SMS from your SIM card, once per recipient. Depending on your plan, your carrier may charge for each message.</string>
+    <string name="rule_enable_description">Enable forwarding rule for %1$s</string>
+    <string name="rule_summary_sender">Sender \"%1$s\"</string>
+    <string name="rule_summary_text">Text \"%1$s\"</string>
+    <string name="rule_summary_any">Any message</string>
+    <string name="rules_test">Test</string>
+
+    <!-- SIM selection -->
+    <string name="editor_sim_label">Send from</string>
+    <string name="editor_sim_permission">Allow access to the SIM cards to choose which one sends the forwards. Until then, the phone\'s default SMS SIM is used.</string>
+    <string name="sim_default">Default SMS SIM</string>
+    <string name="sim_missing">Chosen SIM not inserted</string>
+    <string name="sim_slot">SIM %1$d</string>
+
+    <!-- Rule test -->
+    <string name="test_title">Test rules</string>
+    <string name="test_hint">Enter a message as if it had just arrived. Nothing is sent.</string>
+    <string name="test_sender_label">Sender (number or name)</string>
+    <string name="test_message_label">Message text</string>
+    <string name="test_enter_message">Enter a message text to see the result.</string>
+    <string name="test_result_loop">This message ends with \"This is a forwarded message\" and is never forwarded again, to prevent loops.</string>
+    <string name="test_result_no_match">No rule matches. The message would not be forwarded.</string>
+    <string name="test_matching_rules">Matching rules</string>
+    <string name="test_rule_disabled">%1$s (disabled)</string>
+    <string name="test_rule_outside_schedule">%1$s (not active now: %2$s)</string>
+    <string name="test_result_only_disabled">Only disabled rules or rules outside their time window match. The message would not be forwarded right now.</string>
+    <string name="test_preview_label">Forwarded text</string>
+    <string name="test_sms_count">%1$d SMS per recipient, %2$d SMS in total.</string>
+    <string name="test_over_limit">This would exceed the daily limit of %1$d SMS (%2$d sent today). Some recipients would not get it.</string>
+    <string name="test_paused">Forwarding is paused on the Home tab, so nothing would be forwarded right now.</string>
+
+    <!-- Rule editor -->
+    <string name="editor_new_title">New rule</string>
+    <string name="editor_edit_title">Edit rule</string>
+    <string name="editor_step_message">Message</string>
+    <string name="editor_step_schedule">When</string>
+    <string name="editor_step_recipients">Recipients</string>
+    <string name="editor_step_send">Send</string>
+    <string name="action_next">Next</string>
+    <string name="action_ok">OK</string>
+    <string name="editor_message_title">Which messages should be forwarded?</string>
+    <string name="editor_message_text">Leave a filter blank to ignore it. Separate several terms with commas, one of them is enough. If sender and text are both set, both must match.</string>
+    <string name="editor_message_text_regex">Each filter is a regular expression that must be found somewhere in the sender or text. Upper and lower case do not matter.</string>
+    <string name="editor_exclude_label">Message does NOT contain (optional)</string>
+    <string name="editor_regex_title">Regular expressions</string>
+    <string name="editor_regex_text">For advanced users: evaluate the filters as regex instead of terms.</string>
+    <string name="editor_regex_invalid">This is not a valid regular expression.</string>
+    <string name="editor_schedule_title">When should the rule apply?</string>
+    <string name="editor_schedule_text">Outside these times, matching messages are not forwarded.</string>
+    <string name="editor_schedule_limited">Only on certain days or times</string>
+    <string name="editor_schedule_days">Days</string>
+    <string name="editor_schedule_no_days">Choose at least one day.</string>
+    <string name="editor_schedule_time_title">Only between certain times</string>
+    <string name="editor_schedule_time_text">Otherwise the rule applies all day on the chosen days.</string>
+    <string name="editor_schedule_from">From %1$s</string>
+    <string name="editor_schedule_to">To %1$s</string>
+    <string name="editor_schedule_same_time">Start and end must be different.</string>
+    <string name="editor_schedule_overnight">The time window runs past midnight and ends the next morning.</string>
+    <string name="schedule_always">Always</string>
+    <string name="schedule_daily">Every day</string>
+    <string name="schedule_workdays">Mon–Fri</string>
+    <string name="schedule_weekend">Weekend</string>
+    <string name="editor_recipients_title">Who should get the messages?</string>
+    <string name="editor_recipients_text">Every recipient gets a separate SMS.</string>
+    <string name="editor_send_title">Almost done</string>
+    <string name="editor_send_text">Give the rule a name and check the summary.</string>
+    <string name="editor_summary">Summary</string>
+    <string name="editor_summary_if">If</string>
+    <string name="editor_summary_unless">Unless</string>
+    <string name="editor_summary_mode">Mode</string>
+    <string name="editor_summary_when">When</string>
+    <string name="editor_summary_to">To</string>
+    <string name="rule_summary_exclude">not \"%1$s\"</string>
+    <string name="rule_summary_regex">Regex</string>
+    <string name="editor_sender_label">Sender contains</string>
+    <string name="editor_message_label">Message contains</string>
+    <string name="editor_filter_missing">Add a sender or message-text filter.</string>
+    <string name="editor_recipients_label">Forward to</string>
+    <string name="editor_no_recipients">No numbers added yet.</string>
+    <string name="editor_add_number_label">Add number</string>
+    <string name="editor_add_number_hint">Include the country code, e.g. +49…</string>
+    <string name="editor_add_number">Add number</string>
+    <string name="editor_pick_contact">Pick from contacts</string>
+    <string name="editor_remove_number">Remove %1$s</string>
+    <string name="editor_number_invalid">This does not look like a phone number.</string>
+    <string name="editor_contact_no_number">This contact has no usable phone number.</string>
+    <string name="editor_no_contacts_app">No contacts app available.</string>
+    <string name="editor_cost_hint">Each forward is a separate SMS per recipient and may be charged by your carrier.</string>
+    <string name="editor_save">Save rule</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <plurals name="history_count">
+        <item quantity="one">%d forwarded message</item>
+        <item quantity="other">%d forwarded messages</item>
+    </plurals>
+    <string name="history_filter_all">All (%1$d)</string>
+    <string name="history_filter_failed">Failed (%1$d)</string>
+    <string name="history_clear">Clear</string>
+    <string name="history_clear_title">Clear history?</string>
+    <string name="history_clear_text">This removes all entries from the list. Rules and the forwarded count are kept.</string>
+    <string name="history_empty_title">Nothing forwarded yet</string>
+    <string name="history_empty_text">Messages that match a rule appear here with their delivery status.</string>
+    <string name="history_empty_failed_title">No failed forwards</string>
+    <string name="history_empty_failed_text">All forwarded messages were sent successfully.</string>
+    <string name="history_deleted">Entry deleted</string>
+    <string name="history_resend">Send</string>
+    <string name="history_resend_all">Resend</string>
+    <string name="history_resend_to">Resend to %1$s</string>
+    <string name="history_resend_title">Send again?</string>
+    <string name="history_resend_text_single">The message is sent to %1$s again. Your carrier may charge for it.</string>
+    <plurals name="history_resend_text">
+        <item quantity="one">The message is sent again to %d recipient. Your carrier may charge for it.</item>
+        <item quantity="other">The message is sent again to %d recipients. Your carrier may charge for each message.</item>
+    </plurals>
+    <string name="history_resend_needs_sms">SMS access is required to resend. Allow it on the Home tab.</string>
+    <plurals name="recipient_count">
+        <item quantity="one">%d recipient</item>
+        <item quantity="other">%d recipients</item>
+    </plurals>
+    <string name="today_at">Today %1$s</string>
+
+    <!-- Delivery status -->
+    <string name="status_sending">Sending…</string>
+    <string name="status_sent">Sent</string>
+    <string name="status_sent_at">Sent %1$s</string>
+    <string name="status_sent_waiting">Sent</string>
+    <string name="status_delivered">Delivered</string>
+    <string name="status_delivered_at">Delivered %1$s</string>
+    <string name="status_failed">Failed</string>
+    <string name="status_unconfirmed">Not confirmed</string>
+    <string name="status_not_sent">Not sent  ·  %1$s</string>
+    <string name="status_not_delivered">Not delivered</string>
+    <string name="status_no_report_24h">No delivery report after 24 h</string>
+    <string name="status_waiting_report">Waiting for delivery report</string>
+    <string name="status_attempt">Attempt %1$d</string>
+
+    <!-- Send errors -->
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_generic_failure">Generic failure</string>
+    <string name="error_no_service">No service</string>
+    <string name="error_radio_off">Mobile network off</string>
+    <string name="error_invalid_message">Invalid message</string>
+    <string name="error_code">Error %1$d</string>
+    <string name="error_daily_limit">Daily limit of %1$d SMS reached</string>
+    <string name="error_sim_unavailable">The rule\'s SIM card is not available</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Forwarding problems</string>
+    <string name="notification_channel_description">Alerts when a message could not be forwarded or its delivery was not confirmed.</string>
+    <string name="notification_failed_title">Forwarding failed</string>
+    <string name="notification_send_failed_text">Could not send to %1$s: %2$s</string>
+    <string name="notification_not_delivered_text">Not delivered to %1$s</string>
+    <string name="notification_unconfirmed_title">Delivery not confirmed</string>
+    <string name="notification_unconfirmed_text">No delivery report for %1$s after 24 hours. The message may not have arrived.</string>
+
+    <!-- Rule names, setup link and history -->
+    <string name="editor_name_label">Name (optional)</string>
+    <string name="editor_name_placeholder">e.g. Twitch codes</string>
+    <string name="history_via_rules">via %1$s</string>
+    <string name="setup_app_settings_title">Phone settings for this app</string>
+    <string name="setup_app_settings_text">Revoke permissions or change notifications later.</string>
+
+    <!-- Settings: help, feedback, version -->
+    <string name="settings_help">Help</string>
+    <string name="settings_feedback">Feedback</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="feedback_title">Send feedback</string>
+    <string name="feedback_text">Email to %1$s</string>
+    <string name="feedback_subject">Fowi feedback (%1$s)</string>
+    <string name="feedback_no_mail_app">No email app found. Write to %1$s.</string>
+    <string name="help_how_title">How does forwarding work?</string>
+    <string name="help_how_text">Every incoming SMS is checked against your active rules. A rule matches when the sender contains the sender filter and the text contains the text filter. Upper and lower case do not matter, and an empty filter matches everything. A filter can list several terms separated by commas; one of them is enough. Messages containing the \"does NOT contain\" filter are skipped, and rules with a time window only apply on the chosen days and times. Advanced users can switch a rule to regular expressions.\n\nMatching messages are sent as a new SMS to every recipient of the rule: a line with the original sender (can be turned off in the settings), the original text, followed by \"This is a forwarded message\".</string>
+    <string name="help_status_title">What do the statuses mean?</string>
+    <string name="help_status_text">• Sending: the phone is sending the message.\n• Sent: the mobile network accepted the message. The app is waiting for the delivery report.\n• Delivered: the carrier confirmed that the recipient\'s phone received the message.\n• Not sent: the phone could not send the message, for example without network.\n• Not delivered: the carrier reported that delivery failed.\n• No delivery report after 24 h: sent, but never confirmed. Some carriers do not send delivery reports at all.\n• Attempt 2, 3…: the message was resent from the history.</string>
+    <string name="help_rules_title">How many rules can I create?</string>
+    <string name="help_rules_text">As many as you like, there is no limit. If several rules match the same message, every recipient still gets it only once, even if they appear in several rules. The history shows which rule reached which recipient. On dual SIM phones, each rule can send from its own SIM; a recipient in several rules gets the message from the SIM of the first one.\n\nUse \"Test\" to check which rules a message would match without sending anything. Give rules a name so you can tell them apart in the history.</string>
+    <string name="help_costs_title">Does forwarding cost money?</string>
+    <string name="help_costs_text">Every forward is a regular SMS sent from your SIM card, once per recipient. Long messages may be split into several SMS. Depending on your plan, your carrier may charge for each of them, especially abroad or for foreign numbers. Resending from the history also sends new SMS.\n\nThe daily limit in the settings (100 SMS by default) caps how many SMS are sent per day. Forwards beyond it are not sent, and you get a notification.</string>
+    <string name="help_privacy_title">Where is my data processed?</string>
+    <string name="help_privacy_text">Everything happens on this phone. The app has no internet access and does not upload messages, rules or contacts.\n\nRules and the history (the latest 200 messages) are stored only in the app and are deleted when you uninstall it. Contact names are read from your address book when they are shown and are never stored.\n\nForwarded messages are sent through your carrier like any other SMS.</string>
+    <string name="help_troubleshooting_title">A message was not forwarded or arrived twice</string>
+    <string name="help_troubleshooting_text">• Check on Home that forwarding is on and a rule is active.\n• Chat messages (RCS) are not SMS and are not visible to the app. Ask the sender to send a plain SMS.\n• Exempt the app from battery optimization so it is not stopped in the background.\n• After \"Force stop\", Android does not deliver messages to the app until you open it once.\n• On dual SIM phones, choose a SIM in the rule, or a fixed SIM for SMS in the phone settings instead of \"Ask every time\".\n• Check whether today\'s daily limit was reached.\n• Messages that end with \"This is a forwarded message\" are never forwarded again, to prevent loops.\n• If recipients get messages twice, another SMS forwarding app is probably active on this phone.</string></resources>

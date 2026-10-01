@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_eyebrow">FOWI  /  EASY SMS-FORWARDER</string>
+
+    <!-- Navigation and common actions -->
+    <string name="tab_home">Übersicht</string>
+    <string name="tab_rules">Regeln</string>
+    <string name="tab_history">Verlauf</string>
+    <string name="action_allow">Erlauben</string>
+    <string name="action_exempt">Ausnehmen</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_back">Zurück</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="setup_contacts_title">Kontaktnamen</string>
+    <string name="setup_contacts_done">Regeln und Verlauf zeigen Kontaktnamen an.</string>
+    <string name="setup_contacts_todo">Zeigt in Regeln und Verlauf Kontaktnamen statt reiner Nummern an.</string>
+    <string name="rule_delete_title">Regel löschen?</string>
+    <string name="rule_delete_text">Die Regel und ihre Empfänger werden entfernt. Passende Nachrichten werden nicht mehr weitergeleitet.</string>
+    <string name="history_sender_number">Von %1$s</string>
+    <string name="action_undo">Rückgängig</string>
+    <string name="action_expand">Details anzeigen</string>
+    <string name="action_collapse">Details ausblenden</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_appearance">Darstellung</string>
+    <string name="settings_theme_system">Systemstandard</string>
+    <string name="settings_theme_light">Hell</string>
+    <string name="settings_theme_dark">Dunkel</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_language_system">Systemstandard</string>
+    <string name="settings_forwarding">Weiterleitung</string>
+    <string name="settings_include_sender">Absender mitsenden</string>
+    <string name="settings_include_sender_text">Beginnt die Weiterleitung mit „From:“ und der Nummer des ursprünglichen Absenders, bei bekannten Kontakten auch mit dem Namen. Macht die SMS etwas länger.</string>
+    <string name="settings_daily_limit">Tageslimit</string>
+    <string name="daily_limit_summary">Höchstens %1$d SMS pro Tag  ·  heute %2$d gesendet</string>
+    <string name="daily_limit_summary_off">Kein Limit  ·  heute %1$d SMS gesendet</string>
+    <string name="daily_limit_link">Tageslimit: %1$s</string>
+    <string name="daily_limit_dialog_text">Ist das Limit erreicht, werden an diesem Tag keine weiteren Weiterleitungen gesendet und du bekommst eine Benachrichtigung. Lange Nachrichten zählen als mehrere SMS, erneutes Senden zählt mit. Die Zählung beginnt um Mitternacht neu.</string>
+    <string name="daily_limit_dialog_label">SMS pro Tag</string>
+    <string name="daily_limit_dialog_hint">0 = kein Limit</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_close">Schließen</string>
+
+    <!-- Home -->
+    <string name="home_last_forward">Letzte Weiterleitung  ·  %1$s</string>
+    <string name="home_no_forward_yet">Noch keine Nachrichten weitergeleitet</string>
+    <string name="forwarding_on">Fowi ist aktiv</string>
+    <string name="forwarding_paused">Fowi ist pausiert</string>
+    <string name="forwarding_active_hint">Passende Nachrichten werden automatisch weitergeleitet.</string>
+    <string name="forwarding_setup_hint">Einrichtung unvollständig. Schließe die Pflichtschritte unten ab.</string>
+    <string name="forwarding_paused_hint">Eingehende Nachrichten werden weder geprüft noch weitergeleitet.</string>
+    <string name="forwarding_switch_description">Eingehende Nachrichten weiterleiten</string>
+    <string name="stat_forwarded">Weitergeleitet</string>
+    <string name="stat_active_rules">Aktive Regeln</string>
+    <string name="stat_failed">Fehlgeschlagen</string>
+    <string name="setup_title">Einrichtung</string>
+    <string name="setup_progress">%1$d von %2$d erledigt</string>
+    <string name="setup_done">Erledigt</string>
+    <string name="setup_optional_title">%1$s  ·  optional</string>
+    <string name="setup_sms_title">SMS-Zugriff</string>
+    <string name="setup_sms_done">Eingehende Nachrichten können geprüft und weitergeleitet werden.</string>
+    <string name="setup_sms_todo">Nötig, um Nachrichten zu empfangen und weiterzuleiten.</string>
+    <string name="setup_battery_title">Akku-Optimierung</string>
+    <string name="setup_battery_done">Die App wird im Hintergrund nicht eingeschränkt.</string>
+    <string name="setup_battery_todo">Manche Handys verzögern oder blockieren Hintergrund-Apps. Empfohlen.</string>
+    <string name="setup_notifications_title">Benachrichtigungen</string>
+    <string name="setup_notifications_done">Du wirst benachrichtigt, wenn eine Weiterleitung fehlschlägt.</string>
+    <string name="setup_notifications_todo">Erhalte eine Meldung, wenn eine Nachricht nicht weitergeleitet werden kann. Empfohlen.</string>
+    <string name="setup_rule_title">Aktive Regel</string>
+    <string name="setup_rule_done">%1$d von %2$d Regeln aktiv.</string>
+    <string name="setup_rule_todo">Lege mindestens eine Weiterleitungsregel an oder aktiviere sie.</string>
+
+    <!-- Rules -->
+    <string name="rules_title">Regeln</string>
+    <string name="rules_subtitle">%1$d aktiv  ·  %2$d gesamt</string>
+    <string name="rules_section">Deine Regeln</string>
+    <string name="rules_add">Regel hinzufügen</string>
+    <string name="rules_empty_title">Noch keine Regeln</string>
+    <string name="rules_empty_text">Lege einen Absender- oder Textfilter an, um loszulegen.</string>
+    <string name="rules_privacy_note">Nachrichten werden auf diesem Gerät verarbeitet. Die App lädt weder Nachrichten noch Regeln hoch.</string>
+    <string name="cost_notice_title">Es können Kosten entstehen</string>
+    <string name="cost_notice_text">Jede Weiterleitung wird als normale SMS von deiner SIM-Karte gesendet, einmal pro Empfänger. Je nach Tarif kann dein Netzbetreiber jede Nachricht verrechnen.</string>
+    <string name="rule_enable_description">Weiterleitungsregel für %1$s aktivieren</string>
+    <string name="rule_summary_sender">Absender „%1$s“</string>
+    <string name="rule_summary_text">Text „%1$s“</string>
+    <string name="rule_summary_any">Jede Nachricht</string>
+    <string name="rules_test">Testen</string>
+
+    <!-- SIM-Auswahl -->
+    <string name="editor_sim_label">Senden über</string>
+    <string name="editor_sim_permission">Erlaube den Zugriff auf die SIM-Karten, um auszuwählen, welche die Weiterleitungen sendet. Bis dahin wird die Standard-SIM für SMS verwendet.</string>
+    <string name="sim_default">Standard-SIM für SMS</string>
+    <string name="sim_missing">Gewählte SIM nicht eingelegt</string>
+    <string name="sim_slot">SIM %1$d</string>
+
+    <!-- Regeltest -->
+    <string name="test_title">Regeln testen</string>
+    <string name="test_hint">Gib eine Nachricht ein, als wäre sie gerade angekommen. Es wird nichts gesendet.</string>
+    <string name="test_sender_label">Absender (Nummer oder Name)</string>
+    <string name="test_message_label">Nachrichtentext</string>
+    <string name="test_enter_message">Gib einen Nachrichtentext ein, um das Ergebnis zu sehen.</string>
+    <string name="test_result_loop">Diese Nachricht endet mit „This is a forwarded message“ und wird nie erneut weitergeleitet, um Schleifen zu verhindern.</string>
+    <string name="test_result_no_match">Keine Regel passt. Die Nachricht würde nicht weitergeleitet.</string>
+    <string name="test_matching_rules">Passende Regeln</string>
+    <string name="test_rule_disabled">%1$s (deaktiviert)</string>
+    <string name="test_rule_outside_schedule">%1$s (gerade nicht aktiv: %2$s)</string>
+    <string name="test_result_only_disabled">Nur deaktivierte Regeln oder Regeln außerhalb ihres Zeitfensters passen. Die Nachricht würde derzeit nicht weitergeleitet.</string>
+    <string name="test_preview_label">Weitergeleiteter Text</string>
+    <string name="test_sms_count">%1$d SMS pro Empfänger, insgesamt %2$d SMS.</string>
+    <string name="test_over_limit">Das würde das Tageslimit von %1$d SMS überschreiten (heute %2$d gesendet). Manche Empfänger bekämen die Nachricht nicht.</string>
+    <string name="test_paused">Die Weiterleitung ist auf der Startseite pausiert, derzeit würde also nichts weitergeleitet.</string>
+
+    <!-- Rule editor -->
+    <string name="editor_new_title">Neue Regel</string>
+    <string name="editor_edit_title">Regel bearbeiten</string>
+    <string name="editor_step_message">Nachricht</string>
+    <string name="editor_step_schedule">Wann</string>
+    <string name="editor_step_recipients">Empfänger</string>
+    <string name="editor_step_send">Senden</string>
+    <string name="action_next">Weiter</string>
+    <string name="action_ok">OK</string>
+    <string name="editor_message_title">Welche Nachrichten sollen weitergeleitet werden?</string>
+    <string name="editor_message_text">Lass einen Filter leer, um ihn zu ignorieren. Trenne mehrere Begriffe mit Kommas, einer davon genügt. Sind Absender und Text gesetzt, müssen beide passen.</string>
+    <string name="editor_message_text_regex">Jeder Filter ist ein regulärer Ausdruck, der irgendwo im Absender oder Text vorkommen muss. Groß- und Kleinschreibung spielt keine Rolle.</string>
+    <string name="editor_exclude_label">Text enthält NICHT (optional)</string>
+    <string name="editor_regex_title">Reguläre Ausdrücke</string>
+    <string name="editor_regex_text">Für Fortgeschrittene: Filter als Regex statt als Begriffe auswerten.</string>
+    <string name="editor_regex_invalid">Das ist kein gültiger regulärer Ausdruck.</string>
+    <string name="editor_schedule_title">Wann soll die Regel gelten?</string>
+    <string name="editor_schedule_text">Außerhalb dieser Zeiten werden passende Nachrichten nicht weitergeleitet.</string>
+    <string name="editor_schedule_limited">Nur an bestimmten Tagen oder Uhrzeiten</string>
+    <string name="editor_schedule_days">Tage</string>
+    <string name="editor_schedule_no_days">Wähle mindestens einen Tag.</string>
+    <string name="editor_schedule_time_title">Nur zwischen bestimmten Uhrzeiten</string>
+    <string name="editor_schedule_time_text">Sonst gilt die Regel an den gewählten Tagen ganztägig.</string>
+    <string name="editor_schedule_from">Von %1$s</string>
+    <string name="editor_schedule_to">Bis %1$s</string>
+    <string name="editor_schedule_same_time">Beginn und Ende müssen verschieden sein.</string>
+    <string name="editor_schedule_overnight">Das Zeitfenster läuft über Mitternacht und endet am nächsten Morgen.</string>
+    <string name="schedule_always">Immer</string>
+    <string name="schedule_daily">Täglich</string>
+    <string name="schedule_workdays">Mo–Fr</string>
+    <string name="schedule_weekend">Wochenende</string>
+    <string name="editor_recipients_title">Wer soll die Nachrichten bekommen?</string>
+    <string name="editor_recipients_text">Jeder Empfänger bekommt eine eigene SMS.</string>
+    <string name="editor_send_title">Fast fertig</string>
+    <string name="editor_send_text">Gib der Regel einen Namen und prüfe die Zusammenfassung.</string>
+    <string name="editor_summary">Zusammenfassung</string>
+    <string name="editor_summary_if">Wenn</string>
+    <string name="editor_summary_unless">Außer</string>
+    <string name="editor_summary_mode">Modus</string>
+    <string name="editor_summary_when">Wann</string>
+    <string name="editor_summary_to">An</string>
+    <string name="rule_summary_exclude">ohne „%1$s“</string>
+    <string name="rule_summary_regex">Regex</string>
+    <string name="editor_sender_label">Absender enthält</string>
+    <string name="editor_message_label">Nachricht enthält</string>
+    <string name="editor_filter_missing">Lege einen Absender- oder Textfilter fest.</string>
+    <string name="editor_recipients_label">Weiterleiten an</string>
+    <string name="editor_no_recipients">Noch keine Nummern hinzugefügt.</string>
+    <string name="editor_add_number_label">Nummer hinzufügen</string>
+    <string name="editor_add_number_hint">Mit Ländervorwahl, z. B. +49…</string>
+    <string name="editor_add_number">Nummer hinzufügen</string>
+    <string name="editor_pick_contact">Aus Kontakten wählen</string>
+    <string name="editor_remove_number">%1$s entfernen</string>
+    <string name="editor_number_invalid">Das sieht nicht nach einer Telefonnummer aus.</string>
+    <string name="editor_contact_no_number">Dieser Kontakt hat keine verwendbare Telefonnummer.</string>
+    <string name="editor_no_contacts_app">Keine Kontakte-App verfügbar.</string>
+    <string name="editor_cost_hint">Jede Weiterleitung ist eine eigene SMS pro Empfänger und kann vom Netzbetreiber verrechnet werden.</string>
+    <string name="editor_save">Regel speichern</string>
+
+    <!-- History -->
+    <string name="history_title">Verlauf</string>
+    <plurals name="history_count">
+        <item quantity="one">%d weitergeleitete Nachricht</item>
+        <item quantity="other">%d weitergeleitete Nachrichten</item>
+    </plurals>
+    <string name="history_filter_all">Alle (%1$d)</string>
+    <string name="history_filter_failed">Fehlgeschlagen (%1$d)</string>
+    <string name="history_clear">Leeren</string>
+    <string name="history_clear_title">Verlauf leeren?</string>
+    <string name="history_clear_text">Alle Einträge werden aus der Liste entfernt. Regeln und der Weiterleitungszähler bleiben erhalten.</string>
+    <string name="history_empty_title">Noch nichts weitergeleitet</string>
+    <string name="history_empty_text">Nachrichten, auf die eine Regel passt, erscheinen hier mit ihrem Zustellstatus.</string>
+    <string name="history_empty_failed_title">Keine fehlgeschlagenen Weiterleitungen</string>
+    <string name="history_empty_failed_text">Alle weitergeleiteten Nachrichten wurden erfolgreich gesendet.</string>
+    <string name="history_deleted">Eintrag gelöscht</string>
+    <string name="history_resend">Senden</string>
+    <string name="history_resend_all">Erneut senden</string>
+    <string name="history_resend_to">Erneut an %1$s senden</string>
+    <string name="history_resend_title">Erneut senden?</string>
+    <string name="history_resend_text_single">Die Nachricht wird erneut an %1$s gesendet. Dein Netzbetreiber kann sie verrechnen.</string>
+    <plurals name="history_resend_text">
+        <item quantity="one">Die Nachricht wird erneut an %d Empfänger gesendet. Dein Netzbetreiber kann sie verrechnen.</item>
+        <item quantity="other">Die Nachricht wird erneut an %d Empfänger gesendet. Dein Netzbetreiber kann jede Nachricht verrechnen.</item>
+    </plurals>
+    <string name="history_resend_needs_sms">Zum erneuten Senden ist SMS-Zugriff nötig. Erlaube ihn in der Übersicht.</string>
+    <plurals name="recipient_count">
+        <item quantity="one">%d Empfänger</item>
+        <item quantity="other">%d Empfänger</item>
+    </plurals>
+    <string name="today_at">Heute %1$s</string>
+
+    <!-- Delivery status -->
+    <string name="status_sending">Wird gesendet…</string>
+    <string name="status_sent">Gesendet</string>
+    <string name="status_sent_at">Gesendet %1$s</string>
+    <string name="status_sent_waiting">Gesendet</string>
+    <string name="status_delivered">Zugestellt</string>
+    <string name="status_delivered_at">Zugestellt %1$s</string>
+    <string name="status_failed">Fehlgeschlagen</string>
+    <string name="status_unconfirmed">Nicht bestätigt</string>
+    <string name="status_not_sent">Nicht gesendet  ·  %1$s</string>
+    <string name="status_not_delivered">Nicht zugestellt</string>
+    <string name="status_no_report_24h">Kein Zustellbericht nach 24 h</string>
+    <string name="status_waiting_report">Warte auf Zustellbericht</string>
+    <string name="status_attempt">Versuch %1$d</string>
+
+    <!-- Send errors -->
+    <string name="error_unknown">Unbekannter Fehler</string>
+    <string name="error_generic_failure">Allgemeiner Fehler</string>
+    <string name="error_no_service">Kein Netz</string>
+    <string name="error_radio_off">Mobilfunk ausgeschaltet</string>
+    <string name="error_invalid_message">Ungültige Nachricht</string>
+    <string name="error_code">Fehler %1$d</string>
+    <string name="error_daily_limit">Tageslimit von %1$d SMS erreicht</string>
+    <string name="error_sim_unavailable">Die SIM-Karte der Regel ist nicht verfügbar</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Probleme bei der Weiterleitung</string>
+    <string name="notification_channel_description">Meldet, wenn eine Nachricht nicht weitergeleitet werden konnte oder die Zustellung nicht bestätigt wurde.</string>
+    <string name="notification_failed_title">Weiterleitung fehlgeschlagen</string>
+    <string name="notification_send_failed_text">Senden an %1$s fehlgeschlagen: %2$s</string>
+    <string name="notification_not_delivered_text">Nicht zugestellt an %1$s</string>
+    <string name="notification_unconfirmed_title">Zustellung nicht bestätigt</string>
+    <string name="notification_unconfirmed_text">Kein Zustellbericht für %1$s nach 24 Stunden. Die Nachricht ist möglicherweise nicht angekommen.</string>
+
+    <!-- Rule names, setup link and history -->
+    <string name="editor_name_label">Name (optional)</string>
+    <string name="editor_name_placeholder">z. B. Twitch-Codes</string>
+    <string name="history_via_rules">über %1$s</string>
+    <string name="setup_app_settings_title">Handy-Einstellungen dieser App</string>
+    <string name="setup_app_settings_text">Berechtigungen später entziehen oder Benachrichtigungen ändern.</string>
+
+    <!-- Settings: help, feedback, version -->
+    <string name="settings_help">Hilfe</string>
+    <string name="settings_feedback">Feedback</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="feedback_title">Feedback senden</string>
+    <string name="feedback_text">E-Mail an %1$s</string>
+    <string name="feedback_subject">Feedback zu Fowi (%1$s)</string>
+    <string name="feedback_no_mail_app">Keine E-Mail-App gefunden. Schreib an %1$s.</string>
+    <string name="help_how_title">Wie funktioniert die Weiterleitung?</string>
+    <string name="help_how_text">Jede eingehende SMS wird mit deinen aktiven Regeln verglichen. Eine Regel passt, wenn der Absender den Absenderfilter und der Text den Textfilter enthält. Groß- und Kleinschreibung spielt keine Rolle, ein leerer Filter passt immer. Ein Filter kann mehrere Begriffe mit Kommas getrennt enthalten, einer davon genügt. Nachrichten mit dem „Text enthält NICHT“-Filter werden übersprungen, und Regeln mit Zeitfenster gelten nur an den gewählten Tagen und Uhrzeiten. Fortgeschrittene können eine Regel auf reguläre Ausdrücke umstellen.\n\nPassende Nachrichten werden als neue SMS an alle Empfänger der Regel gesendet: eine Zeile mit dem ursprünglichen Absender (in den Einstellungen abschaltbar), der Originaltext, gefolgt von „This is a forwarded message“.</string>
+    <string name="help_status_title">Was bedeuten die Status?</string>
+    <string name="help_status_text">• Wird gesendet: Das Handy sendet die Nachricht gerade.\n• Gesendet: Das Mobilfunknetz hat die Nachricht angenommen. Die App wartet auf den Zustellbericht.\n• Zugestellt: Der Netzbetreiber hat bestätigt, dass das Handy des Empfängers die Nachricht erhalten hat.\n• Nicht gesendet: Das Handy konnte die Nachricht nicht senden, zum Beispiel ohne Netz.\n• Nicht zugestellt: Der Netzbetreiber hat gemeldet, dass die Zustellung fehlgeschlagen ist.\n• Kein Zustellbericht nach 24 h: gesendet, aber nie bestätigt. Manche Netzbetreiber schicken gar keine Zustellberichte.\n• Versuch 2, 3 …: Die Nachricht wurde aus dem Verlauf erneut gesendet.</string>
+    <string name="help_rules_title">Wie viele Regeln kann ich anlegen?</string>
+    <string name="help_rules_text">So viele du willst, es gibt keine Grenze. Passen mehrere Regeln auf dieselbe Nachricht, bekommt trotzdem jeder Empfänger sie nur einmal, auch wenn er in mehreren Regeln steht. Im Verlauf siehst du, über welche Regel ein Empfänger die Nachricht bekommen hat. Auf Dual-SIM-Handys kann jede Regel über ihre eigene SIM senden; steht ein Empfänger in mehreren Regeln, gilt die SIM der ersten.\n\nMit „Testen“ siehst du, welche Regeln auf eine Nachricht passen würden, ohne dass etwas gesendet wird. Gib Regeln einen Namen, dann kannst du sie im Verlauf leichter unterscheiden.</string>
+    <string name="help_costs_title">Kostet die Weiterleitung etwas?</string>
+    <string name="help_costs_text">Jede Weiterleitung ist eine normale SMS von deiner SIM-Karte, einmal pro Empfänger. Lange Nachrichten werden eventuell auf mehrere SMS aufgeteilt. Je nach Tarif kann dein Netzbetreiber jede davon verrechnen, besonders im Ausland oder an ausländische Nummern. Auch erneutes Senden aus dem Verlauf verschickt neue SMS.\n\nDas Tageslimit in den Einstellungen (standardmäßig 100 SMS) begrenzt, wie viele SMS pro Tag gesendet werden. Weiterleitungen darüber hinaus werden nicht gesendet, und du bekommst eine Benachrichtigung.</string>
+    <string name="help_privacy_title">Wo werden meine Daten verarbeitet?</string>
+    <string name="help_privacy_text">Alles passiert auf diesem Handy. Die App hat keinen Internetzugriff und lädt weder Nachrichten noch Regeln oder Kontakte hoch.\n\nRegeln und Verlauf (die letzten 200 Nachrichten) werden nur in der App gespeichert und beim Deinstallieren gelöscht. Kontaktnamen werden beim Anzeigen aus deinem Telefonbuch gelesen und nie gespeichert.\n\nWeitergeleitete Nachrichten laufen wie jede andere SMS über deinen Netzbetreiber.</string>
+    <string name="help_troubleshooting_title">Eine Nachricht wurde nicht oder doppelt weitergeleitet</string>
+    <string name="help_troubleshooting_text">• Prüfe in der Übersicht, ob die Weiterleitung aktiv ist und eine Regel aktiv ist.\n• Chat-Nachrichten (RCS) sind keine SMS und für die App nicht sichtbar. Bitte den Absender um eine normale SMS.\n• Nimm die App von der Akku-Optimierung aus, damit sie im Hintergrund nicht gestoppt wird.\n• Nach „Stoppen erzwingen“ stellt Android der App keine Nachrichten mehr zu, bis du sie einmal öffnest.\n• Wähle auf Dual-SIM-Handys eine SIM in der Regel oder in den Handy-Einstellungen eine feste SIM für SMS statt „Jedes Mal fragen“.\n• Prüfe, ob das heutige Tageslimit erreicht ist.\n• Nachrichten, die mit „This is a forwarded message“ enden, werden nie erneut weitergeleitet, damit keine Schleifen entstehen.\n• Kommen Nachrichten doppelt an, ist vermutlich noch eine andere SMS-Weiterleitungs-App auf diesem Handy aktiv.</string></resources>
