@@ -22,6 +22,32 @@ An Android app that checks incoming SMS messages against local forwarding rules 
 
 Open this project in Android Studio with Android SDK 35 installed, then run the `app` configuration on a device with SMS capability. The project uses Android Gradle Plugin 9.4.1 and Kotlin 2.2.10, and targets Java 17. From the command line, build with `gradlew assembleDebug` (for example with Android Studio's bundled JDK as `JAVA_HOME`).
 
+Build types:
+
+- `debug`: for development.
+- `release`: minified with R8 and signed with the key from `keystore.properties` (see below). Without that file the APK is built unsigned.
+- `staging`: the release code signed with the debug key, so it installs over a debug build on a test phone without losing its data.
+
+## Release
+
+Fowi is distributed as an APK through GitHub Releases.
+
+1. Raise `versionCode` by one and set `versionName` in `app/build.gradle.kts`.
+2. Add a section for the version to `CHANGELOG.md` and commit.
+3. Run `.\release.ps1`. It checks that everything is committed, runs the tests, builds the signed APK into `release/Fowi-<version>.apk` with a SHA-256 file and creates the tag `v<version>`.
+4. `git push --follow-tags`, then create a GitHub release for the tag with the changelog section and upload both files.
+
+Signing uses `keystore.properties` in the project root (not committed):
+
+```properties
+storeFile=C:/Users/<you>/keystores/fowi-release.jks
+storePassword=…
+keyAlias=fowi
+keyPassword=…
+```
+
+Keep the keystore and this file backed up outside the project. Android only installs updates signed with the same key, so losing the keystore means users have to uninstall and reinstall to get new versions.
+
 Incoming messages that end with `This is a forwarded message` are never forwarded again, which prevents SMS loops when a recipient points back to a device running this app.
 
 Google Play restricts SMS permissions to eligible app use cases and may require this app to be the default SMS handler. Review current Play policies before distributing through Google Play; sideloaded builds still require the user to grant Android's SMS permissions.

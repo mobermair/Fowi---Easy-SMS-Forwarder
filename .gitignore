@@ -3,6 +3,9 @@
 .kotlin/
 build/
 
+# Release artifacts created by release.ps1 (uploaded to GitHub, not committed)
+release/
+
 # Machine-specific configuration
 local.properties
 
