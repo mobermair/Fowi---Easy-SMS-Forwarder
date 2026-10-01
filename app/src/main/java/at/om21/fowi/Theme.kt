@@ -31,57 +31,70 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-private val Forest = Color(0xFF21594C)
-private val Leaf = Color(0xFFBED66A)
-private val Coral = Color(0xFFB85840)
-private val Ink = Color(0xFF1D2925)
+// Colors taken from the logo: its green gradient, the lime arrow, the arrow's dark outline,
+// the white speech bubble and the muted green of the text lines in the bubble.
+private val LogoGreen = Color(0xFF1B6C58)
+private val LogoGreenDeep = Color(0xFF0D493D)
+private val LogoOutline = Color(0xFF0C4B3B)
+private val LogoLime = Color(0xFFCEE76F)
+private val BubbleWhite = Color(0xFFFBFCF6)
+private val BubbleShade = Color(0xFFF2F6EE)
+private val Ink = Color(0xFF14261F)
+// Warnings and costs keep a warm accent so they stand out from the green.
+private val Coral = Color(0xFFB4533A)
 
+// Light: green actions on the bubble's white, with the lime arrow as accent (switches, tab marker).
 private val LightColors = lightColorScheme(
-    primary = Forest,
+    primary = LogoGreen,
     onPrimary = Color.White,
-    primaryContainer = Color(0xFFE9F1E7),
-    onPrimaryContainer = Forest,
-    secondary = Leaf,
-    onSecondary = Ink,
-    secondaryContainer = Leaf,
-    onSecondaryContainer = Ink,
+    primaryContainer = Color(0xFFDCEEE2),
+    onPrimaryContainer = LogoGreenDeep,
+    secondary = LogoLime,
+    onSecondary = LogoOutline,
+    secondaryContainer = LogoLime,
+    onSecondaryContainer = LogoOutline,
     tertiary = Coral,
     onTertiary = Color.White,
-    tertiaryContainer = Color(0xFFFFF0E9),
-    onTertiaryContainer = Color(0xFF7A3422),
-    background = Color(0xFFF5F7F2),
+    tertiaryContainer = Color(0xFFFBEDE5),
+    onTertiaryContainer = Color(0xFF6E2D1C),
+    background = BubbleShade,
     onBackground = Ink,
-    surface = Color.White,
+    surface = BubbleWhite,
     onSurface = Ink,
-    onSurfaceVariant = Color(0xFF66736D),
-    outlineVariant = Color(0xFFE1E7DF),
-    surfaceContainer = Color(0xFFF0F3EE),
-    surfaceContainerHigh = Color(0xFFF0F3EE),
-    surfaceContainerHighest = Color(0xFFE6EBE4)
+    onSurfaceVariant = Color(0xFF4F665C),
+    outline = Color(0xFF7D948A),
+    outlineVariant = Color(0xFFD9E4DB),
+    surfaceVariant = Color(0xFFE4EDE5),
+    surfaceContainer = Color(0xFFEDF3EC),
+    surfaceContainerHigh = Color(0xFFE8EFE7),
+    surfaceContainerHighest = Color(0xFFE1EAE1)
 )
 
+// Dark: like the logo, the lime arrow stands out on deep green; actions are lime with outline-green text.
 private val DarkColors = darkColorScheme(
-    primary = Color(0xFF8FD0B8),
-    onPrimary = Color(0xFF00382A),
-    primaryContainer = Color(0xFF1E3A31),
-    onPrimaryContainer = Color(0xFFB7EBD6),
-    secondary = Leaf,
-    onSecondary = Ink,
-    secondaryContainer = Leaf,
-    onSecondaryContainer = Ink,
-    tertiary = Color(0xFFF2A28C),
+    primary = LogoLime,
+    onPrimary = LogoOutline,
+    primaryContainer = Color(0xFF1C4A3D),
+    onPrimaryContainer = Color(0xFFE3F2B4),
+    secondary = Color(0xFF3E8F77),
+    onSecondary = Color.White,
+    secondaryContainer = LogoGreen,
+    onSecondaryContainer = LogoLime,
+    tertiary = Color(0xFFF0A58E),
     onTertiary = Color(0xFF5A1D0E),
-    tertiaryContainer = Color(0xFF43261D),
+    tertiaryContainer = Color(0xFF3D2620),
     onTertiaryContainer = Color(0xFFFFDBD0),
-    background = Color(0xFF0F1513),
-    onBackground = Color(0xFFE1E8E3),
-    surface = Color(0xFF18201C),
-    onSurface = Color(0xFFE1E8E3),
-    onSurfaceVariant = Color(0xFFA0ADA6),
-    outlineVariant = Color(0xFF2F3B35),
-    surfaceContainer = Color(0xFF1D2521),
-    surfaceContainerHigh = Color(0xFF222B26),
-    surfaceContainerHighest = Color(0xFF2B3530)
+    background = Color(0xFF0B1A16),
+    onBackground = Color(0xFFE4EDE6),
+    surface = Color(0xFF11241E),
+    onSurface = Color(0xFFE4EDE6),
+    onSurfaceVariant = Color(0xFF9DB3A9),
+    outline = Color(0xFF5F7A6F),
+    outlineVariant = Color(0xFF24392F),
+    surfaceVariant = Color(0xFF1C3129),
+    surfaceContainer = Color(0xFF142A23),
+    surfaceContainerHigh = Color(0xFF193128),
+    surfaceContainerHighest = Color(0xFF20392F)
 )
 
 // The light/dark choice from the settings is applied through AppCompat's night mode,
