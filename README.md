@@ -28,6 +28,10 @@ Build types:
 - `release`: minified with R8 and signed with the key from `keystore.properties` (see below). Without that file the APK is built unsigned.
 - `staging`: the release code signed with the debug key, so it installs over a debug build on a test phone without losing its data.
 
+## Trying out changes on a phone
+
+`.\deploy.ps1` runs the tests, builds a signed release of the current code and installs it over wireless debugging. Because it uses the release key, it updates the Fowi version from GitHub in place and keeps rules and history. If the phone is not connected, the script finds it on the network; wireless debugging must be on (Developer options) and the phone paired with this PC once.
+
 ## Release
 
 Fowi is distributed as an APK through GitHub Releases.
